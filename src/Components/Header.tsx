@@ -8,7 +8,6 @@ export default function Header() {
     const [countDownTitle, setCountDownTitle] = useState(0);
     const FullName = 'YOGENDRA K'
 
-
     useEffect(()=> {
         const NameArray:any = [name]
         const workArray = ['FRONT-END', 'FULL-STACK', 'DESIGNER','FREE-LANCER'];
