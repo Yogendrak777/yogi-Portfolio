@@ -3,20 +3,12 @@ import { NavBarContainer, MainCon, Con } from './skins'
  
 export default function NavBar() {
   return (
-    <NavBarContainer>
+    <NavBarContainer id='home'>
         <MainCon> 
-          <Con>
-            CONTACT
-          </Con>
-          <Con>
-            PROJECTS
-          </Con>
-          <Con>
-            ABOUT
-          </Con>
-          <Con>
-            HOME
-          </Con>
+            <Con href="#contact">CONTACT</Con>
+            <Con href="#project">PROJECTS</Con>
+            <Con href="#about">ABOUT</Con>
+            <Con href="#home">HOME</Con>
         </MainCon>
     </NavBarContainer>
   )

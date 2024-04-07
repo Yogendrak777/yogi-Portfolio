@@ -19,63 +19,73 @@ import { FaCss3Alt } from "react-icons/fa6";
 import { SiStyledcomponents } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 
-export default function Skils() {
+export default function MobSkills() {
   return (
     <SkillsContainer>
       <SkillsCon>SKILLS</SkillsCon>
       <SkillsLogoCon>
         <SkillsWithLable>
-          <FaPython size="20%"/>
+          <FaPython size="25%" />
           <SkillsTag>Python</SkillsTag>
         </SkillsWithLable>
+
         <SkillsWithLable>
-          <SiJavascript size="20%"/>
+          <SiJavascript size="25%" />
           <SkillsTag>JavaScript</SkillsTag>
         </SkillsWithLable>
+      </SkillsLogoCon>
+
+      <SkillsLogoCon>
         <SkillsWithLable>
-          <FaReact size="20%"/>
+          <FaReact size="25%" />
           <SkillsTag>React</SkillsTag>
         </SkillsWithLable>
         <SkillsWithLable>
-          <SiRedux size="20%"/>
+          <SiRedux size="25%" />
           <SkillsTag> Redux-Saga</SkillsTag>
         </SkillsWithLable>
       </SkillsLogoCon>
 
       <SkillsLogoCon>
         <SkillsWithLable>
-          <SiTypescript size="20%"/>
+          <SiTypescript size="25%" />
           <SkillsTag> TypeScript</SkillsTag>
         </SkillsWithLable>
         <SkillsWithLable>
-          <FaGitAlt size="20%"/>
+          <FaGitAlt size="25%" />
           <SkillsTag> GIT</SkillsTag>
         </SkillsWithLable>
+      </SkillsLogoCon>
+
+      <SkillsLogoCon>
         <SkillsWithLable>
-          <TbBrandMysql size="20%"/>
+          <TbBrandMysql size="25%" />
           <SkillsTag> SQL</SkillsTag>
         </SkillsWithLable>
         <SkillsWithLable>
-          <DiFirebase size="20%"/>
+          <DiFirebase size="25%" />
           <SkillsTag> FireBase</SkillsTag>
         </SkillsWithLable>
       </SkillsLogoCon>
 
       <SkillsLogoCon>
         <SkillsWithLable>
-          <FaAws size="20%"/>
+          <FaAws size="25%" />
           <SkillsTag> AWS</SkillsTag>
         </SkillsWithLable>
         <SkillsWithLable>
-          <FaCss3Alt size="20%"/>
+          <FaCss3Alt size="25%" />
           <SkillsTag> Css</SkillsTag>
         </SkillsWithLable>
+      </SkillsLogoCon>
+
+      <SkillsLogoCon>
         <SkillsWithLable>
-          <SiStyledcomponents size="20%"/>
+          <SiStyledcomponents size="25%" />
           <SkillsTag> Styled Component</SkillsTag>
         </SkillsWithLable>
         <SkillsWithLable>
-          <FaGolang size="20%"/>
+          <FaGolang size="25%" />
           <SkillsTag> GoLang</SkillsTag>
         </SkillsWithLable>
       </SkillsLogoCon>

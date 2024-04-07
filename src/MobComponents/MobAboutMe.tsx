@@ -8,12 +8,12 @@ import {
   AboutMeLogoCon,
   AboutMeLogos,
 } from "./skins";
-import ProfileImage from "./assets/yogiImage.jpeg";
-import InkedLogo from "./assets/linkedin.png";
-import GitHub from "./assets/github.png";
-import Mail from "./assets/mail.png";
+import ProfileImage from "../Components/assets/yogiImage.jpeg";
+import InkedLogo from "../Components/assets/linkedin.png";
+import GitHub from "../Components/assets/github.png";
+import Mail from "../Components/assets/mail.png";
 
-export default function AboutMe() {
+export default function MobAboutMe() {
 
   const handleGitHub = () => {
     window.open('https://github.com/Yogendrak777', '_blank', 'noopener')
@@ -27,8 +27,8 @@ export default function AboutMe() {
   return (
     <AboutMeContainer>
       <AboutMeCon id="about">ABOUT ME</AboutMeCon>
+      <ProfileImageCon src={ProfileImage} alt="Profile pic" />
       <AboutMeFlex>
-        <ProfileImageCon src={ProfileImage} alt="Profile pic" />
         <AboutMePara>
           Hello World! I'm Yogendra k, a Front-End Web Developer based out of
           Bangalore. With a strong foundation in modern web technologies, I love
