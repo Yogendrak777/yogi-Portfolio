@@ -1,8 +1,21 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 interface JustifyContent {
   justify: string;
 }
+interface ProfileImageProps {
+  AnimationName: boolean;
+}
+
+const PhotoAnimation = keyframes`
+ from { translate: -140px; }
+ to  { translate: 0px; }
+`
+
+const AboutMeParaAnimation = keyframes`
+ from { translate: 140px; }
+ to  { translate: 0px; }
+`
 
 export const NavBarContainer = styled.div`
   height: 5%;
@@ -72,10 +85,14 @@ export const AboutMeFlex = styled.div`
   justify-content: center;
 `;
 
-export const ProfileImageCon = styled.img`
+export const ProfileImageCon = styled.img<ProfileImageProps>`
   height: 30%;
   width: 30%;
   margin: 2%;
+  animation-name: ${(props) => (props.AnimationName && PhotoAnimation)};
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 `;
 
 export const AboutMePara = styled.section`
@@ -83,6 +100,10 @@ export const AboutMePara = styled.section`
   font-size: 20px;
   width: 40%;
   line-height: 1.8;
+  animation-name: ${AboutMeParaAnimation};
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 `;
 
 export const AboutMeLogoCon = styled.section`
@@ -182,6 +203,10 @@ export const ProjectMainCon = styled.div<JustifyContent>`
   color: white;
   justify-content: ${(props) => (props.justify ? props.justify : "center")};
   width: 100%;
+  animation-name: ${(props) => (props.justify === 'flex-start' ? PhotoAnimation : AboutMeParaAnimation)};
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
 `;
 
 export const ProjectTitle = styled.span`

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   AboutMeCon,
   AboutMeContainer,
@@ -14,6 +14,11 @@ import GitHub from "./assets/github.png";
 import Mail from "./assets/mail.png";
 
 export default function AboutMe() {
+  const [animationName, setAnimationName] = useState<boolean>(false);
+
+  useEffect(()=> {
+    setAnimationName(true)
+  }, [])
 
   const handleGitHub = () => {
     window.open('https://github.com/Yogendrak777', '_blank', 'noopener')
@@ -28,7 +33,7 @@ export default function AboutMe() {
     <AboutMeContainer>
       <AboutMeCon id="about">ABOUT ME</AboutMeCon>
       <AboutMeFlex>
-        <ProfileImageCon src={ProfileImage} alt="Profile pic" />
+        <ProfileImageCon src={ProfileImage} alt="Profile pic" AnimationName = {animationName} />
         <AboutMePara>
           Hello World! I'm Yogendra k, a Front-End Web Developer based out of
           Bangalore. With a strong foundation in modern web technologies, I love

@@ -21,7 +21,7 @@ export default function Header() {
                 setCountDown(countDown+1);
                 NameArray.push(FullName[countDown])
                 setName(NameArray);
-            },400)
+            },200)
         }
 
         if (countDownTitle === workArray.length){
